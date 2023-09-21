@@ -1,0 +1,9 @@
+<div *ngIf="isLogin; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>Hello {{user}}!</ng-template>
+<ng-template #elseBlock>
+    <button>Login</button>
+</ng-template>
+<div>{{calendarName}}</div>
+<div class="grid" (click)="handlerClick($event)">
+    <div class="day" [attr.data-day]="item" *ngFor="let item of array">{{item}}</div>
+</div>
