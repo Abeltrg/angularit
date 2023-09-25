@@ -3,7 +3,13 @@
 <ng-template #elseBlock>
     <button>Login</button>
 </ng-template>
-<div>{{calendarName}}</div>
+<div>{{calendarName|upper}}</div>
+<div>
+    <app-time>        
+    </app-time>
+</div>
 <div class="grid" (click)="handlerClick($event)">
-    <app-day class="day" [day] ="day" [attr.data-day]=day *ngFor="let day of array"></app-day>
+    <app-day class="day" 
+    [day] ="day" 
+    [attr.data-day]=day *ngFor="let day of array"></app-day>
 </div>
