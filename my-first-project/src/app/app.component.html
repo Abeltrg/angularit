@@ -5,5 +5,5 @@
 </ng-template>
 <div>{{calendarName}}</div>
 <div class="grid" (click)="handlerClick($event)">
-    <div class="day" [attr.data-day]="item" *ngFor="let item of array">{{item}}</div>
+    <app-day class="day" [day] ="day" [attr.data-day]=day *ngFor="let day of array"></app-day>
 </div>
