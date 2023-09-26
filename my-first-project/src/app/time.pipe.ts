@@ -1,11 +1,10 @@
 import { Time } from '@angular/common';
 import { Pipe, PipeTransform } from '@angular/core';
 
-options {
-  :number,
-  :number,
-  :number,
-  :number
+const options: Intl.DateTimeFormatOptions = {     
+  hour: 'numeric', 
+  minute: 'numeric', 
+  second:'numeric'
 }
 
 @Pipe({name: 'time'})

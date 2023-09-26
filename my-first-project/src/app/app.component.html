@@ -3,11 +3,8 @@
 <ng-template #elseBlock>
     <button>Login</button>
 </ng-template>
+<app-time></app-time>
 <div>{{calendarName|upper}}</div>
-<div>
-    <app-time>        
-    </app-time>
-</div>
 <div class="grid" (click)="handlerClick($event)">
     <app-day class="day" 
     [day] ="day" 
